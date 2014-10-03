@@ -1,0 +1,16 @@
+<template name="default">
+    <!-- header -->
+    {{> header}}
+    <!-- / header -->
+    <!-- nav -->
+    {{> navigation}}
+    <!-- / nav -->
+    <section id="content">
+        <section class="main padder">
+            <div class="clearfix"><br /></div>
+            {{> yield}}
+        </section>
+    </section>
+    <!-- footer -->
+    {{> footer}}
+</template>

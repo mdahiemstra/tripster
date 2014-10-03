@@ -1,0 +1,12 @@
+#!/bin/bash
+
+source ../../scripts/colors.sh
+
+APP_ENV="development"
+
+cecho "---> Loading environment settings" $BLUE
+source config/"$APP_ENV"/env.sh
+
+cecho "---> Starting application in $APP_ENV" $BLUE
+
+meteor --port $PORT
